@@ -14,7 +14,9 @@
 
 깃을 처음 시작 - 버전을 만드는 것 / 그 뒤의 branch , overflow ,,,,
 
-버전을 만든다 - 첫번째 시간 
+<br>
+
+## 버전을 만든다 - 첫번째 시간 
 
 버전을 다룬다 
 
@@ -33,6 +35,9 @@ stage area 여러개의 파일이 수정되었을 때 원하는 만큼만 분리
 working directory = project folder 
 
 git이 등장하기 전까지는 stage 라는 개념이 없었음 
+
+<br>
+
 
 **repository** 저장소 : **.git(숨긴 폴더)** 
 
@@ -58,11 +63,13 @@ git이 등장하기 전까지는 stage 라는 개념이 없었음
 
 복귀 할 때 : master 클릭 → 내가 가장 마지막에 만든 버전을 가리키고 있음 → 클릭 → (head 사라지고 master만 남음) head와 master 일치해짐 
 
-head : 내가 checkout한 곳에 머물고 있음  (오늘의 주인공) / 옆에 직선(파란선)의 동그라미가 head (검은 동그라미) : 헤드는 가만히 있는 데, 마스터가 움직이기 때문에 움직이는 거 같음 
+<br>
+
+**head** : 내가 checkout한 곳에 머물고 있음  (오늘의 주인공) / 옆에 직선(파란선)의 동그라미가 head (검은 동그라미) : 헤드는 가만히 있는 데, 마스터가 움직이기 때문에 움직이는 거 같음 
 
 마스터는 나의 최신 커밋이 누구냐 
 
-버전 : 워킹 카피의 스냅샷 
+**버전** : 워킹 카피의 스냅샷 
 
 head는 나의 워킹 카피(지금 작업하는 파일)가 어느 버전에서 유래했냐를 알려주는 정보 
 
@@ -86,15 +93,15 @@ git을 보면 제일 먼저 head를 본다. 가리키는 파일이 그대로이�
 
 head가 master를 직접 가리키지 않은 상태 = detached 헤드가 마스터와 떨어진 상태다 그러면 head의 parent는 현재 head가 가리키는 파일이다. 
 
-→ 이 상태로 다시 master로 가면 부모는 그 전이 아니라, 옮겨진 버전에서 유래한다. 
+ → ***이 상태로 다시 master로 가면 부모는 그 전이 아니라, 옮겨진 버전에서 유래한다.***
 
 parent는 그 전에 head가 어디를 가리키고 있는 가
 
-![](_2019-07-29__2-49d84643-b4cf-4e3f-9df6-d693862512a1.56.52.png)
+![](./git_images/_2019-07-29__2-49d84643-b4cf-4e3f-9df6-d693862512a1.56.52.png)
 
-![](_2019-07-29__3-d41a991a-f9e5-4df6-b9bd-0c74c37dd98c.02.05.png)
+![](./git_images/_2019-07-29__3-d41a991a-f9e5-4df6-b9bd-0c74c37dd98c.02.05.png)
 
-![](_2019-07-29__3-5fa96cc4-c98a-47e4-9b21-addb0f06ca3f.28.22.png)
+![](./git_images/_2019-07-29__3-5fa96cc4-c98a-47e4-9b21-addb0f06ca3f.28.22.png)
 
 버전은 워킹 카피의 스냅샷이다. 스테이지는 수정한 부분을 보여주는 장소.
 
@@ -102,13 +109,13 @@ C와 D를 지우고 싶을 때 → git에게 b로 reset해 라고 하면 마스�
 
 (체크아웃하면 head가 바뀜)→ 시간여행이 되기도 하고 삭제가 되기도 함 
 
-![](_2019-07-29__3-51b4573d-0bd4-44bb-9f67-98fb952b62c5.46.20.png)
+![](./git_images/_2019-07-29__3-51b4573d-0bd4-44bb-9f67-98fb952b62c5.46.20.png)
 
 ckeckout : 시간여행 
 
 reset : 삭제 (delete와는 다름, 더 복합적) 헤드가 가리키는 브랜치(master)를 바꾸는 것 *브랜치가 마스터 말고 여러 개 있을 수 있다는 암시 ^^ 
 
-브랜치 : 마스터가 가리키는 정보 
+**브랜치** : 마스터가 가리키는 정보 
 
 c d 다시 살리기 
 
@@ -123,11 +130,15 @@ c d 다시 살리기
 
 3. 다른 방법은 나중에 알려주심 
 
+<br>
+<br>
+
+
 커맨드 라인 - 터미널 에서 깃 사용하기  
 
-CLI (커맨드라인인터페이스) - 키보드, ok google 
+**CLI (커맨드라인인터페이스) - 키보드, ok google**
 
-gui 그래픽 유저 인터페이스 - 터치, 마우스 
+**gui 그래픽 유저 인터페이스 - 터치, 마우스**
 
 비스코 - 에디터 (코드를 편집하는 툴): cli 내장되어있음 ctrl + j 
 
@@ -135,7 +146,10 @@ terminal 설정 맞추기
 
 view - command palette → default shell → bash 
 
-1. **상태확인 (제일 먼저하는 거) 내가 지금 어디있지? : pwd 엔터**
+<br>
+
+
+**1. 상태확인 (제일 먼저하는 거) 내가 지금 어디있지? : pwd 엔터**
 
 **2. 내가 있는 곳엔 어떤 파일이 있나 list : ls / ls -l (자세히보기)/ ls -al (숨긴 거 안 숨긴 거 모두 자세히 보여줘)**
 
@@ -159,35 +173,38 @@ git add index.html index2.html → 요렇게 동시에 해줘도 되고 따로�
 
 **6. git commit -m"  " / m 메세지 → 버전 하나 생성** 
 
-7. **git diff** : 수정 후 (add하기 전) 전 버전과 다른 점을 볼 수 있다
+**7. git diff : 수정 후 (add하기 전) 전 버전과 다른 점을 볼 수 있다**
 
 git 하고 tab 누르면 파일 이름 볼 수 있음 
 
-8. **git log** : 내가 한 버전들을 다 볼 수 있음 (소스트리의 history) 나가고 싶을 땐 q 누르기 
+**8. git log : 내가 한 버전들을 다 볼 수 있음 (소스트리의 history) 나가고 싶을 땐 q 누르기**
 
-git log --oneline : 한줄로 심플하게 log를 보고 싶을 때 
+    git log --oneline : 한줄로 심플하게 log를 보고 싶을 때 
 
-git log --oneline --all (헤드나 마스터가 가리키는 커밋들 다 보여줌)
+    git log --oneline --all (헤드나 마스터가 가리키는 커밋들 다 보여줌)
 
-status : repository의 현재 상태를 알고 싶을 때 
+    git status : repository의 현재 상태를 알고 싶을 때 
 
-log : commit 들과의 관계 (역사 확인) 
+    log : commit 들과의 관계 (역사 확인) 
 
-9. checkout 시간여행 (head 옮길 때) git checkout 5d1a9cb → 파일 아이디 
+**9. checkout 시간여행 (head 옮길 때) git checkout 5d1a9cb → 파일 아이디** 
 
-git checkout master → 다시 master로 돌아오는 방법 
+    git checkout master → 다시 master로 돌아오는 방법 
 
-10. git reset(헤드가 가리키는 브랜치를 바꾸기) — hard 깃 아이디  : commit 지우기 
+**10. git reset(헤드가 가리키는 브랜치를 바꾸기) — hard 깃 아이디  : commit 지우기** 
 
-git reset --hard 5d1a9cb 
+    git reset --hard 5d1a9cb 
 
-삭제가 된 것은 아니지만, 잃버러린 것. 
+삭제가 된 것은 아니지만, 잃어러린 것. 
 
-11. 다시 찾는 방법 (되돌리기) git reset —hard 원하는버전의 git id 
+**11. 다시 찾는 방법 (되돌리기) git reset —hard 원하는버전의 git id** 
 
-git reset --hard da7a568
+    git reset --hard da7a568
 
-html
+<br>
+
+
+## html
 
 index.html
 
@@ -195,31 +212,33 @@ index.html
 
 크롬 ctrl + o 해서 만든 거 불러오면 웹페이지 생김. 
 
-밑줄 U(언더라인) <u>welcome my homepage.</u>
+    밑줄 U(언더라인) <u>welcome my homepage.</u>
 
-기울기 : <i>homepage</i>
+    기울기 : <i>homepage</i>
 
 → i 와 u 같은 거 : 태그 
 
-<br> 줄바꿈
+    <br> 줄바꿈
 
 없으면 시작되는 태그 /가 있으면 끝나는 태그 
 
 근데 br은 없다. 왜냐면 줄바꿈은 뭘 설명할 필요가 없기 때문! 
 
-list 목록 <li></li> 앞에 * 생김 → 부모가 있어야함
+    list 목록 <li></li> 앞에 * 생김 → 부모가 있어야함
 
-<ul></ul> 목록 그룹화 → 자식이 있어야함 
+    <ul></ul> 목록 그룹화 → 자식이 있어야함 
 
-숫자 붙이기 <ol> </ol>
+    숫자 붙이기 <ol> </ol>
+
+<br>
 
 왜 커맨드라인을 쓰는 지, 왜 좋은 지, 왜 나쁜 지 생각하면서 쓰기 
 
-git init (소스트리에서 새로은 repository 만드는 거) 
+    git init (소스트리에서 새로은 repository 만드는 거) 
 
 Q. 버전 아이디를 모르면(깃아이디) 다시 못 되찾나? 
 
-git reflog 엔터 (내가 했던 operation들을 보여줌)
+    git reflog 엔터 (내가 했던 operation들을 보여줌)
 
 (노랑색)오른쪽이 결과 / 왼쪽이 원인 
 
@@ -229,6 +248,6 @@ git reflog 엔터 (내가 했던 operation들을 보여줌)
 
 내가 명령어를 찾아내면 옛날 기록들을 다 찾을 수 있음 
 
-git relfog → 했던 모든 행위를 반복 
+    git relfog → 했던 모든 행위를 반복 
 
 [GITHUB from the hell2](./GITHUB-from-the-hell2-78f1702c-d4ba-4dd2-823e-0594fe93ab44.md)
