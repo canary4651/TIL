@@ -1,4 +1,4 @@
-# Pyothon1
+# Python1
 
 exprssion : 표현식: 파이썬에서 가장 단순한 단위 그냥 계산된 결과라고 본다
 
