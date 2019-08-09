@@ -26,6 +26,8 @@ error : 잘못 입력하면 나오는 값
 
 \ 역슬래시 : 익스케이프문자 
 
+
+```python
      "\"Hello, world\""
     '"Hello, world"'
      '\\'
@@ -64,7 +66,7 @@ error : 잘못 입력하면 나오는 값
     /n( -ㅅ-)/
      print('\b( -ㅅ-)/')
     ( -ㅅ-)/
-
+```
 z = 'hello, world' → literal 이라고함 (리터럴) 
 
 z + '!' (+ 는 더하기가 아니라 연결시켜준다는 의미) 
@@ -104,6 +106,7 @@ seconds_per_minute * minutes_per_hour * hours_per_day * days_per_year
 연습
 
 실습 tip!
+```python
 
     "hello"
     
@@ -117,7 +120,7 @@ seconds_per_minute * minutes_per_hour * hours_per_day * days_per_year
     print("'hello'"+'"!"')
     'hello'"!"
     
-    
+```
     
 
 "와 '를 구분하는 이유는 Pirnt( ) 에서 문자값을 빼낼 때, ''를 붙이고 싶거나 ""를 붙이고 싶을 때 유용하다 
@@ -144,6 +147,7 @@ print(z)
 
 #2
 
+```python
     name = 'Anne'
     
     score = 100
@@ -158,16 +162,18 @@ print(z)
     score3 = 70
     
     print(name, score1, score2, score3)
-    
 
-scores = [80, 90, 70] : 여러개를 한번에 관리
 
-print(name, scores[0], scores[1], scores[2]) / 프로그래머들은 0부터 시작 (벡터) 0:원점 1:한칸옆으로 2: 두칸옆으로 (그래서 80,90,70) → 숫자를 대입하는 게 아니라, 순서라고 생각 
+# scores = [80, 90, 70] : 여러개를 한번에 관리
+
+# print(name, scores[0], scores[1], scores[2]) / 프로그래머들은 0부터 시작 (벡터) 0:원점 1:한칸옆으로 2: 두칸옆으로 (그래서 80,90,70) → 숫자를 대입하는 게 아니라, 순서라고 생각 
+
+```
 
 ![밈](1.png)
 
     #
-    
+ ```python   
     total_score = scores[0] + scores[1] + scores[2]
     
     print(total_score)
@@ -211,7 +217,7 @@ print(name, scores[0], scores[1], scores[2]) / 프로그래머들은 0부터 시
     some_scores = scores[2:4] → 개수가 아니라 순서! 
     
     print(some_scores)
-    
+
     [30, 40] → 프로그래머들의 이상한 습관,,, 시작은 0이고 끝은 -1(끝은 생략합니다) 그래서 30,50이 나올거라고 생각하지만 20,40(50의 전) 이 나온다..! **끝번호는 세지 않는다. (이상_미만) 으로 생각** 
     
     some_scores = scores[:4] 
@@ -258,3 +264,4 @@ print(name, scores[0], scores[1], scores[2]) / 프로그래머들은 0부터 시
      some=scores[:-2]
      some
     [10, 20, 30, 40]
+```

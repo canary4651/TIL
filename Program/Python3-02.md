@@ -34,27 +34,28 @@
 
 <br>
 
+```python
     factorial = 1
     factorial *= 2
     factorial *= 3
     ...
     factorial *= n
     	
-    ->  factorial = 1 * 2 * ... * n 이렇게 늘어나면 어려우니까 한줄로 팩토리얼 정리 (패턴찾기)
+    #  factorial = 1 * 2 * ... * n 이렇게 늘어나면 어려우니까 한줄로 팩토리얼 정리 (패턴찾기)
     
     # 초기값
     facttorial = 1
     #누산 : x는 1부터 n까지 
     factorial *= x
     
-    -> 오늘 배울 것 : 반복적으로 실행되는 파이썬 코드 
+    # 오늘 배울 것 : 반복적으로 실행되는 파이썬 코드 
 
 <br> 
 
     
     for x in range(1,n+1):
     		factorial *= x
-
+```
 <br>
 
 - for : - 하는 동안 (기간) = loop
@@ -66,23 +67,23 @@
 - 한 단위 = 코드블럭 ex) factorial *=x → indent가 맞춰진 코드들을 한 단위로 인식함
 
 <br>
-
+```python
     for x in range (1,n+1):
     	y = x
     	factorial *= y 
-
+```
 <br>
 
 - 요렇게 많이 써도 되지만 항상 들여쓰기(indent) 잊지 말기!
 
 <br>
-
+```python
     factorial = 1
     factorial *= 2 
     factorial *= 3
     ...
     factorial *= x
-
+```
 <br>
 
 원래는 이렇게 써줘야함 
@@ -90,7 +91,8 @@
 <br>
 
     실습
-    
+
+```python
     scores = [80,100,70,90,40]
     sum = 0
     
@@ -98,3 +100,4 @@
         sum += scores[i]
     
     print(sum)
+```
