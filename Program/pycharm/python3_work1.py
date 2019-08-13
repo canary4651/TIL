@@ -1,6 +1,9 @@
 
 my_scores = [30, 90, 80, 40, 50]
 
+# 숙제 했는데 순서대로 안 나눠서 하고 그대로 그냥 하면서 했더니 이런 결과가,,,ㅎㅎ,,,
+
+
 def total(my_scores):
     total = 0
     for i in range(len(my_scores)):
@@ -75,13 +78,15 @@ for i in range(2,10):        # ①번 for문
 
 # 구구단 = Multiplication table
 
-i = int
-j = int
-def mt(i):
-    for i in range(2,10):
-        for j in range(1,10):
-            print(i*j)
-    return mt
+def mt(i,j):
+    return i*j
+    assert 2 * 4 == 8
+    assert 5 * 9 == 45
+
+for i in range(2,10):
+    for j in range(1,10):
+        print(i*j)
+return mt
 
 def test5():
     assert mt(2*1) == 2
@@ -89,4 +94,8 @@ def test5():
     assert mt(2*4) == 6
 
 
-# 구구단 모르겠다....
+# 구구단 모르겠다....내 생각엔 돌아가야하는 데 왜 안되지,,,
+# python3_06 에서 천천히 보고 이해함!!
+
+
+
