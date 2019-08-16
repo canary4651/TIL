@@ -3,7 +3,7 @@
 - 주피터 노트북으로 켜서 실행
 - FUNDA 데이터를 이용한 pandas
 - train['store_id']/nunique()
-- # n + unitue : 유니크가 몇 개 있는 지 알려줌
+- (#) n + unitue : 유니크가 몇 개 있는 지 알려줌
 - 내가만들어준테이블이름['store_id'].nunitue()
 - index 값 만들어주는 방법 : .reset_index() 붙여주기 (인덱스를 컬럼으로 만들어주는 함수) // 다시 되돌리기 .ser_index()
 - 인덱스에 이름이 붙는 이유? - 멀티 인덱스가 존재하는 순간이 옴
