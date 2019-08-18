@@ -19,8 +19,8 @@ class_scores = [
 
 #1
 
-scores1 = class_scores[0]
-scores2 = class_scores[1]
+# scores1 = class_scores[0]
+# scores2 = class_scores[1]
 
 # def total_class(scores, i):
 #     total_class = 0
@@ -45,11 +45,11 @@ def total_class(dic, subject):
     return total_subject
 
 # 이렇게 풀어도 됨! 사실 이 쪽이 더 이해하기 쉽고 말하기 편한 듯
-# def total_class(scores,subject):
-#     total_subject = 0
-#     for dic in scores:
-#         total_subject += dic[subject]
-#     return total_subject
+def total_class(scores,subject):
+    total_subject = 0
+    for dic in scores:
+        total_subject += dic[subject]
+    return total_subject
 
 # dic은 순서가 없이 key:value로 이루어져 있다. 만약 a = [0,1,2,3] 일떄, a의 첫번째 원소 -> a[0] 인 것처럼
 # dic의 "국어" 원소를 뽑는다 하면 dic["국어"] 라고 입력하는 것. dic[0]라고 하면 오류남..! 왜냐면 딕셔너리는 순서를 갖는 게 아니니까
