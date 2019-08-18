@@ -1,8 +1,5 @@
 import pandas as pd # 판다스 설치해주기 (밑에 terminal 에서 하면됨)
 
-from scores import class_total
-
-
 def main():
     class_scores = [
         {'Name': 'Jane', 'Korean': 100, 'English': 100, 'Math': 100},
