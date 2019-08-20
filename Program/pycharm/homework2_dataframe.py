@@ -16,3 +16,5 @@ table()
 
 # from homework2 import grade_scores2
 # 어쩔땐 from import가 그냥 회색으로 되버리는 데, 어쩔때 그런 걸까? 질문하기!
+
+# python homework2_dataframe.py
