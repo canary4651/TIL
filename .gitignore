@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+jupyter/funda_train.csv
+program/pycharm/__pycache__
+program/pycharm/.idea
+program/pycharm/venv
+smalldata/*.ai
+icon?
