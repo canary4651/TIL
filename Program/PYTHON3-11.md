@@ -1,0 +1,110 @@
+# PYTHON3-11
+
+# API - jupyter notebook 
+"동물보호관리시스템 유기동물 조회 서비스"
+
+- 공공데이터 api 이용하여 수업하기
+- 유기견 기관 정보 오픈 api
+
+# requests로 웹에서 데이터 가져오기
+
+- Python’s Requests Library (Guide) – Real Python
+    - [https://realpython.com/python-requests/](https://realpython.com/python-requests/)
+- Requests: HTTP for Humans™
+    - [https://2.python-requests.org/](https://2.python-requests.org/)
+- URI (Uniform Resource Identifier)
+- [https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90](https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90) : 통합 자원 식별자
+    - Base URL: 공통인 부분
+    - Query Parameters: ? 뒤에 들어가는 부분
+- Question
+- path와 query의 차이
+    - protocol://host/path?query
+    - [http://www.google.com/search?q=data](http://www.google.com/search?q=data)
+    - protocol → http
+    - host → [www.google.com](http://www.google.com/)
+    - path → /search
+    - query → q=data
+
+- URL Decoding query strings or form parameters in Python
+    - [https://www.urldecoder.io/python/](https://www.urldecoder.io/python/)
+
+    → 공공데이터포털의 API 키가 URL 인코딩된 상태라 다시 복원(디코딩)해야 함.
+
+- Jupyter Notebook
+    - [https://nbviewer.jupyter.org/github/ahastudio/CodingLife/blob/master/20190919/python/01-requests.ipynb](https://nbviewer.jupyter.org/github/ahastudio/CodingLife/blob/master/20190919/python/01-requests.ipynb)
+
+# XML 파싱
+
+XML (Extensible Markup Language)
+
+[https://ko.wikipedia.org/wiki/XML](https://ko.wikipedia.org/wiki/XML)
+
+→ 다양한 데이터를 표현할 수 있는 마크업 언어.
+
+마크업은 “구조”를 드러냅니다.
+
+- 평문: “아버지가 방에 들어가신다”
+- 마크업: “<subject>아버지</subject>가 <place>방</place>에 <verb>들어가신다</verb>.”
+
+흥미롭다면 “시맨틱 웹” 같은 주제도 간단히 살펴보세요.
+
+[https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%A7%A8%ED%8B%B1_%EC%9B%B9](https://ko.wikipedia.org/wiki/%EC%8B%9C%EB%A7%A8%ED%8B%B1_%EC%9B%B9)
+
+Parsing (구문 분석)
+
+[https://ko.wikipedia.org/wiki/%EA%B5%AC%EB%AC%B8_%EB%B6%84%EC%84%9D](https://ko.wikipedia.org/wiki/%EA%B5%AC%EB%AC%B8_%EB%B6%84%EC%84%9D)
+
+→ 텍스트를 우리가 활용하기 좋은 형태인 트리 구조로 만드는 작업.
+
+![](https://lh5.googleusercontent.com/IRoASv6nTt0k_TWikPB1SsJqN2ctYpB5AnLpW807K8ALD060NqBULfoTlAOeUFcmTI4LcRftb_nqz9DhcTft4kd5ca4XJAyE8PJSlGJEhkOG06SBXE9v-7znYr6NhbYD7Lyis1Gb)
+
+XML은 트리 구조를 표현하기 때문에 파싱이 쉽습니다. 그래서 널리 쓰“였”습니다.
+
+하지만 최근에는 JSON이나 YAML 같이 더 편한 게 더 많이 쓰입니다. 특히 JSON은 사실상 표준이 되었습니다.
+
+- [https://ko.wikipedia.org/wiki/JSON](https://ko.wikipedia.org/wiki/JSON)
+- [https://ko.wikipedia.org/wiki/YAML](https://ko.wikipedia.org/wiki/YAML)
+
+파이썬 기본 라이브러리
+
+xml.etree.ElementTree — The ElementTree XML API
+
+[https://docs.python.org/3/library/xml.etree.elementtree.html](https://docs.python.org/3/library/xml.etree.elementtree.html)
+
+Jupyter Notebook
+
+[https://nbviewer.jupyter.org/github/ahastudio/CodingLife/blob/master/20190919/python/02-xml-parse.ipynb](https://nbviewer.jupyter.org/github/ahastudio/CodingLife/blob/master/20190919/python/02-xml-parse.ipynb)
+
+Python 3's f-Strings: An Improved String Formatting Syntax (Guide) – Real Python
+
+[https://realpython.com/python-f-strings/](https://realpython.com/python-f-strings/)
+
+# LocationIQ API 사용
+
+LocationIQ - Free & Fast Geocoding and Reverse Geocoding service
+
+[https://locationiq.com/](https://locationiq.com/)
+
+API 문서
+
+[https://locationiq.com/docs](https://locationiq.com/docs)
+
+→ “Search / Forward Geocoding” 섹션의 “Python” 탭을 보시면 됩니다.
+
+Jupyter Notebook
+
+[https://nbviewer.jupyter.org/github/ahastudio/CodingLife/blob/master/20190919/python/03-locationiq.ipynb](https://nbviewer.jupyter.org/github/ahastudio/CodingLife/blob/master/20190919/python/03-locationiq.ipynb)
+
+# 하나로 합치기
+
+API 2개 사용 + 시각화
+
+Jupyter Notebook
+
+[https://nbviewer.jupyter.org/github/ahastudio/CodingLife/blob/master/20190919/python/04-integration.ipynb](https://nbviewer.jupyter.org/github/ahastudio/CodingLife/blob/master/20190919/python/04-integration.ipynb)
+
+# 다음 수업 예고
+
+1. 대한민국 행정구역 데이터
+2. 트리맵
+3. 캐글
