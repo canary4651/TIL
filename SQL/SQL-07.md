@@ -7,7 +7,7 @@
 `COUNT(*)`와 `COUNT(지정컬럼)`의 차이점에 대해서 
 
 - [https://mode.com/resources/sql-tutorial/sql-count](https://mode.com/resources/sql-tutorial/sql-count)
-
+```sql
     # 선미님의 실수 
     select sum(high)/count(*) -> 요런 실수
     from table
@@ -29,13 +29,13 @@
     
     # 다를 때도 있음 
     # 노트필기 참고 
-
+```
 `SUM()`
 
 - [https://mode.com/resources/sql-tutorial/sql-sum](https://mode.com/resources/sql-tutorial/sql-sum)
 - 평균을 구해라?
     - avg()를 쓰지 않고 sum()/count() 이렇게 구해야 할 때도 있음
-
+```sql
     SELECT SUM(p.open) / COUNT(p.open)
     FROM tutorial.aapl_historical_stock_price p
     
@@ -45,7 +45,7 @@
     
     SELECT SUM(p.open) / COUNT(1)
     FROM tutorial.aapl_historical_stock_price p;
-
+```
 ## 9월 24일 과제
 
 `AVG()`
