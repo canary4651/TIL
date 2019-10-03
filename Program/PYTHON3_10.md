@@ -61,7 +61,7 @@
 
     jupyter notebook
 
-    a5ac7934267c122840d131cb73d12378
+
 
         from geocoder import geocode
         
@@ -75,6 +75,6 @@
 
     주피터 키기 전에 터미널에서 
 
-    export KAKAO_REST_API_KEY=카카오_앱_REST_API_키 (a5ac7934267c122840d131cb73d12378) → 내가 발급받은 키 
+    export KAKAO_REST_API_KEY=카카오_앱_REST_API_키  → 내가 발급받은 키 
 
     그리고 jupyter notebook
