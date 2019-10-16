@@ -2,11 +2,11 @@ from bs4 import BeautifulSoup
 import requests
 import time #네이버에 계속 요청하면 막히니까 시간 간격을 줄거임
 from collections import deque
-import hashlib 
+# import hashlib 
 
 
-def get_filename(url):
-    return hashlib.shal(url)
+# def get_filename(url):
+#     return hashlib.shal(url)
 # stack과 que의 차이점? stack은 오른쪽(끝)에서 부터 빼가고, que는 왼쪽(첫번째)부터 빼감.
 
 visited = {}
@@ -36,8 +36,7 @@ def crawl(url):
         links = get_links(soup)
         # 내용을 파일로 저장하거나, 뭔가 다른 일을 하기 
         # 파일로 저장하는 방법 : ssh 
-        with open(get_filename(url), 'wb') as fout:
-        fout.write(resp.text.encode('euc-kr'))
+       
 
         for link in links:
             href = link.get('href')
