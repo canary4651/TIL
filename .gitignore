@@ -1,7 +1,12 @@
 .ipynb_checkpoints/
 jupyter/funda_train.csv
+jupyter/biggidata/*.csv
+jupyter/bigdata/*.xlsx
 program/pycharm/__pycache__
 program/pycharm/.idea
 program/pycharm/venv
 smalldata/*.ai
+TB_T_RSPOP_ADMI.txt
+jupyter/빅캠 인구수.csv 
+study/
 icon?
