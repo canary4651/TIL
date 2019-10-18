@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_db2af2af00574cefb8d6843dc479a153 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_db2af2af00574cefb8d6843dc479a153" ></div>
+        
+</body>
+<script>    
+    
+            var map_db2af2af00574cefb8d6843dc479a153 = L.map(
+                "map_db2af2af00574cefb8d6843dc479a153",
+                {
+                    center: [37.5502, 126.982],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_afcf87162e1f4bcc954538ce32990990 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_db2af2af00574cefb8d6843dc479a153);
+        
+    
+            var feature_group_c360273e706546489d22ace2afe2d971 = L.featureGroup(
+                {}
+            ).addTo(map_db2af2af00574cefb8d6843dc479a153);
+        
+    
+            var marker_658f8776da6449b2bbebc5a4efe382e4 = L.marker(
+                [37.512818401014975, 126.94166745003164],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_00dc500e35a14277a56c99ad2cf0236e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_658f8776da6449b2bbebc5a4efe382e4.setIcon(icon_00dc500e35a14277a56c99ad2cf0236e);
+        
+    
+        var popup_9f4babd476f746ac8474ef906a6e70ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea46ac8464ef43ee8bf076d14147f7ca = $(`<div id="html_ea46ac8464ef43ee8bf076d14147f7ca" style="width: 100.0%; height: 100.0%;">동작50플러스센터 : 센터</div>`)[0];
+            popup_9f4babd476f746ac8474ef906a6e70ce.setContent(html_ea46ac8464ef43ee8bf076d14147f7ca);
+        
+
+        marker_658f8776da6449b2bbebc5a4efe382e4.bindPopup(popup_9f4babd476f746ac8474ef906a6e70ce)
+        ;
+
+        
+    
+    
+            var marker_01f200cd533148c9b2d4e79ba261002c = L.marker(
+                [37.65536737517054, 127.04801346784771],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_9dcde34b13ad460f8900be7af9e216a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_01f200cd533148c9b2d4e79ba261002c.setIcon(icon_9dcde34b13ad460f8900be7af9e216a7);
+        
+    
+        var popup_79870b718c3d429aa02f75ef03d317ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b27c4b868a4c47d3bb78c95f5251ccec = $(`<div id="html_b27c4b868a4c47d3bb78c95f5251ccec" style="width: 100.0%; height: 100.0%;">서울시 50+ 북부캠퍼스</div>`)[0];
+            popup_79870b718c3d429aa02f75ef03d317ba.setContent(html_b27c4b868a4c47d3bb78c95f5251ccec);
+        
+
+        marker_01f200cd533148c9b2d4e79ba261002c.bindPopup(popup_79870b718c3d429aa02f75ef03d317ba)
+        ;
+
+        
+    
+    
+            var marker_6c21ec9acca041cc9d7fd9456901249d = L.marker(
+                [37.583858767565715, 127.01924678037015],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_a788c99a5f7f4507b31f5839cacb9fa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_6c21ec9acca041cc9d7fd9456901249d.setIcon(icon_a788c99a5f7f4507b31f5839cacb9fa5);
+        
+    
+        var popup_b22f62d0ec674c67b25a2f71287d8d08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5a93821784a484e9f775dc0a595dba2 = $(`<div id="html_a5a93821784a484e9f775dc0a595dba2" style="width: 100.0%; height: 100.0%;">성북50플러스 센터 : 센터</div>`)[0];
+            popup_b22f62d0ec674c67b25a2f71287d8d08.setContent(html_a5a93821784a484e9f775dc0a595dba2);
+        
+
+        marker_6c21ec9acca041cc9d7fd9456901249d.bindPopup(popup_b22f62d0ec674c67b25a2f71287d8d08)
+        ;
+
+        
+    
+    
+            var marker_88ccd0bebce54e66bdbbb10d0978b739 = L.marker(
+                [37.54674671893906, 126.94997413872636],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_54b3473112d04a39a986bb496aeb2133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_88ccd0bebce54e66bdbbb10d0978b739.setIcon(icon_54b3473112d04a39a986bb496aeb2133);
+        
+    
+        var popup_ce5b7b9dc7594689af0cd8360530d0cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6016fcf5215d415b94276bc770159b17 = $(`<div id="html_6016fcf5215d415b94276bc770159b17" style="width: 100.0%; height: 100.0%;">서울시 50+ 중부캠퍼스</div>`)[0];
+            popup_ce5b7b9dc7594689af0cd8360530d0cf.setContent(html_6016fcf5215d415b94276bc770159b17);
+        
+
+        marker_88ccd0bebce54e66bdbbb10d0978b739.bindPopup(popup_ce5b7b9dc7594689af0cd8360530d0cf)
+        ;
+
+        
+    
+    
+            var marker_f4912f149f6245a6b0becaf9c784a6e9 = L.marker(
+                [37.500960797358466, 127.03062053785379],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_1350ef7203fd4161ad96df885ee29f3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_f4912f149f6245a6b0becaf9c784a6e9.setIcon(icon_1350ef7203fd4161ad96df885ee29f3b);
+        
+    
+        var popup_48d40df7edd648e7a6f3cf48e44e6f79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef4faac313684719a2dff62ed0e005a9 = $(`<div id="html_ef4faac313684719a2dff62ed0e005a9" style="width: 100.0%; height: 100.0%;">서울시 50+ 동남캠퍼스</div>`)[0];
+            popup_48d40df7edd648e7a6f3cf48e44e6f79.setContent(html_ef4faac313684719a2dff62ed0e005a9);
+        
+
+        marker_f4912f149f6245a6b0becaf9c784a6e9.bindPopup(popup_48d40df7edd648e7a6f3cf48e44e6f79)
+        ;
+
+        
+    
+    
+            var marker_b552741ea08e4774a78ec050b86d2e4c = L.marker(
+                [37.5913966405242, 126.94248029362792],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_064c0f9226e6412196452b5676ed91eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_b552741ea08e4774a78ec050b86d2e4c.setIcon(icon_064c0f9226e6412196452b5676ed91eb);
+        
+    
+        var popup_5e65f85c53d548878164a9cfd114ae73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8f99e6253ac4a368ecaff20def57a8d = $(`<div id="html_d8f99e6253ac4a368ecaff20def57a8d" style="width: 100.0%; height: 100.0%;">서대문50플러스 센터 : 센터</div>`)[0];
+            popup_5e65f85c53d548878164a9cfd114ae73.setContent(html_d8f99e6253ac4a368ecaff20def57a8d);
+        
+
+        marker_b552741ea08e4774a78ec050b86d2e4c.bindPopup(popup_5e65f85c53d548878164a9cfd114ae73)
+        ;
+
+        
+    
+    
+            var marker_d26f6991fa1149cc952913ce6c2cf20a = L.marker(
+                [37.48773702521842, 126.84213013682744],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_6d13d5dd864b479697b2d90287993d56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_d26f6991fa1149cc952913ce6c2cf20a.setIcon(icon_6d13d5dd864b479697b2d90287993d56);
+        
+    
+        var popup_561f260c4c834bb89a1f774d2a6fde1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88e9ab9500244592b47b9804fb12c0ff = $(`<div id="html_88e9ab9500244592b47b9804fb12c0ff" style="width: 100.0%; height: 100.0%;">서울시 50+ 남부캠퍼스</div>`)[0];
+            popup_561f260c4c834bb89a1f774d2a6fde1f.setContent(html_88e9ab9500244592b47b9804fb12c0ff);
+        
+
+        marker_d26f6991fa1149cc952913ce6c2cf20a.bindPopup(popup_561f260c4c834bb89a1f774d2a6fde1f)
+        ;
+
+        
+    
+    
+            var marker_b82ee48540044da694cf06ebc34d9c53 = L.marker(
+                [37.53839970621203, 127.08243027398024],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_3c2626bd98b54f3fb1b6624c1c6f00e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_b82ee48540044da694cf06ebc34d9c53.setIcon(icon_3c2626bd98b54f3fb1b6624c1c6f00e8);
+        
+    
+        var popup_b9705c88f6304cde9f362b538a196919 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed6354caa0eb4ade871c0fa489d8f072 = $(`<div id="html_ed6354caa0eb4ade871c0fa489d8f072" style="width: 100.0%; height: 100.0%;">광진 50플러스상담센터 : 센터</div>`)[0];
+            popup_b9705c88f6304cde9f362b538a196919.setContent(html_ed6354caa0eb4ade871c0fa489d8f072);
+        
+
+        marker_b82ee48540044da694cf06ebc34d9c53.bindPopup(popup_b9705c88f6304cde9f362b538a196919)
+        ;
+
+        
+    
+    
+            var marker_0f1f7164c91e486faff917d98c862f53 = L.marker(
+                [37.534345, 127.062441],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_04612b5bb8d94b66a88eaf0de173804a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_0f1f7164c91e486faff917d98c862f53.setIcon(icon_04612b5bb8d94b66a88eaf0de173804a);
+        
+    
+        var popup_b94e300c2464440d975dbdf8f896e199 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bc4884e17494b07b70e40704ad79957 = $(`<div id="html_7bc4884e17494b07b70e40704ad79957" style="width: 100.0%; height: 100.0%;">서울시 50+ 동부캠퍼스</div>`)[0];
+            popup_b94e300c2464440d975dbdf8f896e199.setContent(html_7bc4884e17494b07b70e40704ad79957);
+        
+
+        marker_0f1f7164c91e486faff917d98c862f53.bindPopup(popup_b94e300c2464440d975dbdf8f896e199)
+        ;
+
+        
+    
+    
+            var marker_db998e147af1481f97a9884b3d9535da = L.marker(
+                [37.65611999169975, 127.07070181179512],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_c86c0d1bb77d4d8cae0bac833a01926a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_db998e147af1481f97a9884b3d9535da.setIcon(icon_c86c0d1bb77d4d8cae0bac833a01926a);
+        
+    
+        var popup_5ec2c19b7e094e38b098850ba42fc0ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a83a3c5ca5b41949bc5757b7d95cfc7 = $(`<div id="html_2a83a3c5ca5b41949bc5757b7d95cfc7" style="width: 100.0%; height: 100.0%;">노원50플러스센터 : 센터</div>`)[0];
+            popup_5ec2c19b7e094e38b098850ba42fc0ac.setContent(html_2a83a3c5ca5b41949bc5757b7d95cfc7);
+        
+
+        marker_db998e147af1481f97a9884b3d9535da.bindPopup(popup_5ec2c19b7e094e38b098850ba42fc0ac)
+        ;
+
+        
+    
+    
+            var marker_f066601fbc424dfabfa6c44e41e0d5e0 = L.marker(
+                [37.57231281265907, 126.99049582245232],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_fd2661fa9c7548769aab4fe0b2fc6217 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_f066601fbc424dfabfa6c44e41e0d5e0.setIcon(icon_fd2661fa9c7548769aab4fe0b2fc6217);
+        
+    
+        var popup_66a57091f22e4abcb9792d2a842801c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d2814d7064d4adbb52142765d44869b = $(`<div id="html_5d2814d7064d4adbb52142765d44869b" style="width: 100.0%; height: 100.0%;">도심권50플러스센터 : 센터</div>`)[0];
+            popup_66a57091f22e4abcb9792d2a842801c4.setContent(html_5d2814d7064d4adbb52142765d44869b);
+        
+
+        marker_f066601fbc424dfabfa6c44e41e0d5e0.bindPopup(popup_66a57091f22e4abcb9792d2a842801c4)
+        ;
+
+        
+    
+    
+            var marker_0855228b51694a7580dfbea7851632df = L.marker(
+                [37.48864111939655, 126.84174378811436],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_c2c460e2d3524c938c3ccd4d13ac497f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_0855228b51694a7580dfbea7851632df.setIcon(icon_c2c460e2d3524c938c3ccd4d13ac497f);
+        
+    
+        var popup_ee6899e2de0a453583af19b616ac7c3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a245d0953aad4ba9b337a2a847846c9c = $(`<div id="html_a245d0953aad4ba9b337a2a847846c9c" style="width: 100.0%; height: 100.0%;">서울시50플러스 남부캠퍼스 : 캠퍼스</div>`)[0];
+            popup_ee6899e2de0a453583af19b616ac7c3e.setContent(html_a245d0953aad4ba9b337a2a847846c9c);
+        
+
+        marker_0855228b51694a7580dfbea7851632df.bindPopup(popup_ee6899e2de0a453583af19b616ac7c3e)
+        ;
+
+        
+    
+    
+            var marker_2782d3567c474fb18801ed1341531e64 = L.marker(
+                [37.60808162493392, 126.93305838435323],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_863c888a0f00481c830978744b7d7ddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_2782d3567c474fb18801ed1341531e64.setIcon(icon_863c888a0f00481c830978744b7d7ddb);
+        
+    
+        var popup_43f9d07775f44fd6baaf3b71eb49a099 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c558a2f5b334fb7b39f2697a5d66d04 = $(`<div id="html_5c558a2f5b334fb7b39f2697a5d66d04" style="width: 100.0%; height: 100.0%;">서울시 50+ 서부캠퍼스</div>`)[0];
+            popup_43f9d07775f44fd6baaf3b71eb49a099.setContent(html_5c558a2f5b334fb7b39f2697a5d66d04);
+        
+
+        marker_2782d3567c474fb18801ed1341531e64.bindPopup(popup_43f9d07775f44fd6baaf3b71eb49a099)
+        ;
+
+        
+    
+    
+            var marker_a696e2d862b64e29abf7982359bce54d = L.marker(
+                [37.51813563930949, 126.93075883564951],
+                {}
+            ).addTo(feature_group_c360273e706546489d22ace2afe2d971);
+        
+    
+            var icon_ee731bf5633343379b2da98f2d80aede = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a696e2d862b64e29abf7982359bce54d.setIcon(icon_ee731bf5633343379b2da98f2d80aede);
+        
+    
+        var popup_01ff7e5fc0fa431fa6d4fef1e4be8c3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c047fc39f5c4a2f9b9d5f7f83f51c19 = $(`<div id="html_7c047fc39f5c4a2f9b9d5f7f83f51c19" style="width: 100.0%; height: 100.0%;">영등포50플러스센터 : 센터</div>`)[0];
+            popup_01ff7e5fc0fa431fa6d4fef1e4be8c3f.setContent(html_7c047fc39f5c4a2f9b9d5f7f83f51c19);
+        
+
+        marker_a696e2d862b64e29abf7982359bce54d.bindPopup(popup_01ff7e5fc0fa431fa6d4fef1e4be8c3f)
+        ;
+
+        
+    
+</script>
