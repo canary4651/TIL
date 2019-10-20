@@ -5,10 +5,6 @@ from collections import deque
 # import hashlib 
 
 
-# def get_filename(url):
-#     return hashlib.shal(url)
-# stack과 que의 차이점? stack은 오른쪽(끝)에서 부터 빼가고, que는 왼쪽(첫번째)부터 빼감.
-
 visited = {}
 queue = deque()
 
