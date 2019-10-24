@@ -9,6 +9,7 @@ smalldata/*.ai
 TB_T_RSPOP_ADMI.txt
 jupyter/빅캠 인구수.csv 
 Recommendation/movie/*.csv
+Recommendation/movie/*.pdf
 study/
 jupyter/zz
 icon?
