@@ -12,5 +12,6 @@ Recommendation/movie/*.csv
 Recommendation/movie/*.pdf
 Recommendation/movie/*.tsv
 study/
+sql/*.pdf
 jupyter/zz
 icon?
