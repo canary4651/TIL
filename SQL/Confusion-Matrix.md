@@ -121,7 +121,7 @@
 - 어떻게 하면 Threshold를 잘 이동시키면서 ROC 좌표를 찍을 수 있을까요?
 - 좌표들을 평면 상에 찍어보세요.
 
-# **sklearn.metrics.roc_curve**를 활용 해 봅시다.
+### **sklearn.metrics.roc_curve**를 활용 해 봅시다.
 
 데이터: titanic
 
