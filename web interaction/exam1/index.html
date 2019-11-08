@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" href="../images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <title>Chapter 05 - Chart.js</title>
+    </head>
+    <body>
+        <h1>What is your stack?</h1>
+        
+            <p>We've visualized the capabilities of the third generation of dataitgirls students who are here to learn Web data visualization.</p>
+            <p>Take a good look and find out what people can do!</p>
+        
+        
+        <canvas id="myChart" class="chartjs" width="1540" height="700" style="display: block; height: 300px; width: 770px;"></canvas>
+        <script>
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx,{ 
+                type: "radar",
+                data: {
+                    labels: ["HP", "Mental", "Coding", "Data Analysis", "Design", "Drinking", "Eating"],
+                    datasets: [
+                        {
+                            label: "Heeyal",
+                            data: [30, 70, 50, 50, 20, 5, 30],
+                            fill: true,
+                            backgroundColor: "rgba(255, 99, 132, 0.2)",
+                            borderColor: "rgb(255, 99, 132)",
+                            pointBackgroundColor: "rgb(255, 99, 132)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgb(255, 99, 132)"
+                        },
+                        {
+                            label: "Danbi",
+                            data: [70, 30, 60, 30, 20, 80, 100],
+                            fill: true,
+                            backgroundColor: "rgba(54, 162, 235, 0.2)",
+                            borderColor: "rgb(54, 162, 235)",
+                            pointBackgroundColor: "rgb(54, 162, 235)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgb(54, 162, 235)"
+                        },
+                        {
+                            label: "Yeeun",
+                            data: [85, 90, 50, 70, 80, 10, 80],
+                            fill: true,
+                            backgroundColor: "rgba(244, 208, 63, 0.2)",
+                            borderColor: "rgb(244, 208, 63)",
+                            pointBackgroundColor: "rgb(244, 208, 63)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgb(244, 208, 63)"
+                        },
+                        {
+                            label: "Dahye",
+                            data: [90, 90, 30, 60, 0, 10, 100],
+                            fill: true,
+                            backgroundColor: "rgba(165, 105, 189, 0.2)",
+                            borderColor: "rgb(165, 105, 189)",
+                            pointBackgroundColor: "rgb(165, 105, 189)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgb(165, 105, 189)"
+                        },
+                        {
+                            label: "Sumin",
+                            data: [90, 50, 60, 70, 0, 30, 100],
+                            fill: true,
+                            backgroundColor: "rgba(82, 190, 128, 0.2)",
+                            borderColor: "rgb(82, 190, 128)",
+                            pointBackgroundColor: "rgb(82, 190, 128)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgb(82, 190, 128)"
+                        },
+                        {
+                            label: "Boram",
+                            data: [80, 85, 50, 70, 60, 40, 70],
+                            fill: true,
+                            backgroundColor: "rgba(230, 126, 34, 0.2)",
+                            borderColor: "rgb(230, 126, 34)",
+                            pointBackgroundColor: "rgb(230, 126, 34)",
+                            pointBorderColor: "#fff",
+                            pointHoverBackgroundColor: "#fff",
+                            pointHoverBorderColor: "rgb(230, 126, 34)"
+                        }
+                    ]
+                },
+                options: {
+                    elements: {
+                        line: {
+                            tension :0,
+                            borderWidth: 3
+                        }
+                    },
+                    animation: {
+                        duration: 500,
+                        onComplete: function () {
+                            var ctx = this.chart.ctx;
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
+</html> 

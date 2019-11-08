@@ -1,0 +1,18 @@
+body {
+    background-color: darkgrey;
+    font-family: Helvetica;
+}
+
+h1 {
+    color: pink;
+    margin-left: 20px;
+    padding: 10px; /* padding은 안쪽 */
+    margin: 10px; /* margin은 바깥쪽 */
+    padding-bottom: 12px;
+}
+
+p {
+    color:#FAFAFA;
+    margin-left: 20px;
+    margin: 5x;
+}
