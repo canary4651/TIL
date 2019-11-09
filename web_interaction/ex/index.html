@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en"> <!--html로 시작해서-->
+    <head>
+        <meta charset="utf-8" /> <!--한글 글자 써지게 만드는 조건-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> <!--모바일로 줌 아웃 할때 필요-->
+        <link rel="shortcut icon" HREF="favicon.ico" /> <!--파비콘? 웹브라우저의 상단 작은 아이콘!-->
+        <link rel="stylesheet" type="text/css" href="./style.css"> <!--스타일.css 불러오기-->
+        <title>HTML example</title> 
+    </head>
+    <body>
+        <!-- Comment!! -->
+        <!-- HTML code from W3School -->
+        <!-- https://www.w3schools.com/html/default.asp -->
+
+        <h1>Hello,World</h1>
+
+
+        <!-- Title -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6> <!--숫자가 작을수록 상위 크기!!-->
+
+        <!-- Horizontal Rules -->
+        <hr />
+
+        <!-- Paragraphs -->
+        <p>This is a paragraph.</p> <!--문단 추가-->
+        <p>This is another paragraph.</p>
+        <p>
+                This paragraph <!--한줄로 표기가 됨 그래서 해결하기 위해서 다음 예제 참고-->
+                contains a lot of lines
+                in the source code,
+                but the browser
+                ignores it.
+        </p>
+    
+        <hr />
+
+        <!-- Line Breaks (br : 엔터 역할) 엔터와 띄어쓰기는 한칸만 인정 됨 -->
+
+        <p>This is<br />a paragraph<br />with line breaks.</p>
+
+        <hr />
+
+        <!--칸 여러개 띄우고 싶을 때 기법 -->
+        <p>This is<br /> &nbsp;&nbsp;&nbsp;a paragraph<br />with line breaks.</p>
+        <hr />
+        <!-- pre 이라는 무식한 방법. 안의 엔터, 띄어쓰기를 살리겠다는 말! 보통 게시판으로 사용/ -->
+        <pre>
+                My Bonnie lies over the ocean.
+                
+                My Bonnie lies over the sea.
+                
+                My Bonnie lies over the ocean.
+                
+                Oh, bring back my Bonnie to me.
+        </pre>
+    
+        <hr />
+    <!-- Text Formatting // 근데 가급적 데이터 내용이 아닌 모양 관련 내용은 css에서 해결하자-->
+    <p> 
+            <b>This text is bold</b>
+        </p>
+        <p> <!--p 문단을 나눠줘야 문단이 생김-->
+            <strong>This text is strong</strong>
+        </p>
+        <p> <!--이탤릭-->
+            <i>This text is italic</i>
+        </p>
+        <p>
+            <em>This text is emphasized</em>
+        </p>
+        <p>
+            HTML <small>Small</small> Formatting
+        </p>
+        <p>
+            HTML <mark>Marked</mark> Formatting
+        </p>
+        <p>
+            My favorite color is <del>blue</del> red.
+        </p>
+        <p>
+            My favorite <ins>color</ins> is red.
+        </p>
+        <p>
+            This is <sub>subscripted</sub> text.
+        </p>
+        <p>
+            This is <sup>superscripted</sup> text.
+        </p>
+
+        <hr />
+    <!-- Quotation ""-->
+    <p>
+            WWF's goal is to: 
+            <q>Build a future where people live in harmony with nature.</q>
+    </p>
+
+    <!-- blockquote : 통째로 인용문을 만들 때 -->
+    <p>
+            <p>Here is a quote from WWF's website:</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature.
+            The world's leading conservation organization,
+            WWF works in 100 countries and is supported by
+            1.2 million members in the United States and
+            close to 5 million globally.
+            </blockquote>
+    </p>
+    <!-- Abbreviations : 데이터 처리 용도 (무시 가능) -->
+    <p>
+        The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+    </p>
+
+    <!-- Contact Information  -->
+    <p>
+        <address> <!--주소 입력, 잘 안 씀, 근데 외국에선 많이 신경 씀 -->
+                Written by John Doe.<br>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+        </address>
+    </p>
+    <!-- Work Title -->
+    <p>
+            <cite>The Scream</cite> by Edvard Munch. Painted in 1893.
+        </p>
+        
+        <!-- Bi-Directional Override  -->
+        <p>
+            <bdo dir="rtl">This text will be written from right to left</bdo>
+        </p>
+
+        <hr />
+
+        <!-- Links -->
+        <p>
+            <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+        </p>
+        <p>
+            <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+        </p>
+        <p>
+            <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+        </p>
+
+        <hr />
+
+        <!-- Images -->
+        <p>
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="500" height="333">
+            <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+            <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+            <img src="https://www.w3schools.com/html/programming.gif" alt="Computer Man" width="48" height="48">
+        </p>
+
+        <hr />
+
+        <!-- Tabless -->
+        <p>
+            <table style="width:100%">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Telephone</th>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>55577854</td>
+                    <td>55577855</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table style="width:100%">
+                <caption>Monthly savings</caption>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$50</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <table id="t01">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+            </table>
+        </p>
+
+        <hr />
+
+        <!-- List -->
+        <p>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </p>
+        <p>
+            <ul style="list-style-type:disc;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </p>
+        <p>
+            <ul style="list-style-type:square;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </p>
+        <p>
+        <ul style="list-style-type:none;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </p>
+
+        <hr />
+
+        <!-- Block and Inline Elements -->
+        <p>
+            <div>Hello World</div>
+        </p>
+        <p>
+            <div>
+                <h2>London</h2>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            </div>
+        </p>
+        <p>
+            <h1>My <span>Important</span> Heading</h1>
+        </p>
+
+        
+
+
+    </body>
+
+</html> <!--#html로 끝난다-->
