@@ -16,5 +16,5 @@ sql/*.pdf
 jupyter/zz
 program/.idea
 embedding/embedding/fasttext.vec
-.pptx
+embedding/presentation
 icon?
