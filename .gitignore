@@ -14,4 +14,7 @@ Recommendation/movie/*.tsv
 study/
 sql/*.pdf
 jupyter/zz
+program/.idea
+embedding/embedding/fasttext.vec
+.pptx
 icon?
