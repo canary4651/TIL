@@ -1,20 +1,18 @@
 import hashlib
 import time
 from collections import deque
-​
+
 from bs4 import BeautifulSoup
 import requests
 from newspaper import Article
-​
+
 ​# 키워드로 크롤링하기 
 visited = {}
 queue = deque()
 ​
-​
 def fetch(url):
-    return requests.get(url)
-​
-​
+    return requests.get(url)​
+
 def get_links(soup):
     return soup.find_all('a')
 ​
