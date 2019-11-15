@@ -2,6 +2,9 @@
 jupyter/funda_train.csv
 jupyter/biggidata/*.csv
 jupyter/bigdata/*.xlsx
+jupyter/1112_PJT002_test.csv
+jupyter/1112_PJT002_train.csv
+jupyter/1112_PJT002_validation.csv
 program/pycharm/__pycache__
 program/pycharm/.idea
 program/pycharm/venv
@@ -16,5 +19,5 @@ sql/*.pdf
 jupyter/zz
 program/.idea
 embedding/embedding/fasttext.vec
-embedding/presentation
-icon?
+embedding/presentation 
+icon? 
