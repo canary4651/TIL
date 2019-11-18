@@ -5,6 +5,7 @@ jupyter/bigdata/*.xlsx
 jupyter/1112_PJT002_test.csv
 jupyter/1112_PJT002_train.csv
 jupyter/1112_PJT002_validation.csv
+jupyter/1118_digit-recognizer/*.csv
 program/pycharm/__pycache__
 program/pycharm/.idea
 program/pycharm/venv
