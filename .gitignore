@@ -18,6 +18,8 @@ Recommendation/movie/*.tsv
 study/
 sql/*.pdf
 jupyter/zz
+jupyter/dacon
+jupyter/1125_bike/*.csv
 program/.idea
 embedding/embedding/fasttext.vec
 embedding/presentation 
