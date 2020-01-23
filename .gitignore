@@ -17,6 +17,7 @@ Recommendation/movie/*.csv
 Recommendation/movie/*.pdf
 Recommendation/movie/*.tsv
 study/
+TamnaJeju/
 sql/*.pdf
 jupyter/zz
 jupyter/dacon
