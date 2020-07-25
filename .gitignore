@@ -12,7 +12,7 @@ program/pycharm/.idea
 program/pycharm/venv
 smalldata/*.ai
 TB_T_RSPOP_ADMI.txt
-jupyter/빅캠 인구수.csv 
+jupyter/빅캠 인구수.csv
 Recommendation/movie/*.csv
 Recommendation/movie/*.pdf
 Recommendation/movie/*.tsv
@@ -24,6 +24,7 @@ jupyter/dacon
 jupyter/1125_bike/*.csv
 program/.idea
 embedding/embedding/fasttext.vec
-embedding/presentation 
+embedding/presentation
 algorithm_sample/
-icon? 
+icon?
+.idea/
